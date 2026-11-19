@@ -23,16 +23,25 @@ Paste the ISSUE.md file into a new issue in that repository.
 
 ---
 
-## Ticket Triage Policy (Current)
+## Ticket Triage Policy
 
-We currently triage support tickets using Severity only.
+Severity describes impact; Priority sets response order. Reassess the default when urgency or scope warrants it.
 
-### Severity levels
-- Low means minor annoyance with an easy workaround
-- Medium means a meaningful user impact but workarounds exist
-- High means blocks key workflows or causes data loss
+### Severity
+- Low: minor annoyance with an easy workaround
+- Medium: meaningful user impact, but workarounds exist
+- High: blocks key workflows or causes data loss
 
-### Current rules
-- Triage happens daily
-- High severity should be addressed first
-- We do not currently define priority labels, default ownership, or a fast triage checklist
+### Priority
+- P0: critical, widespread outage or active data loss; respond immediately
+- P1: urgent, blocks key workflows; default for High severity
+- P2: important, meaningful impact with a workaround; default for Medium
+- P3: routine, minor impact with an easy workaround; default for Low
+
+Use P0 only when immediate, broad impact makes the normal severity default too slow.
+
+### How to triage in 60 seconds
+1. Identify who is affected and what is blocked or at risk.
+2. Set Severity, then use its default Priority (High→P1, Medium→P2, Low→P3).
+3. Escalate to P0 for a critical, widespread incident; note why.
+4. Record the owner and next action; revisit priority if impact changes.
